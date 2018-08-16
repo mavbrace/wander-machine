@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/saved_places_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#50545F"
+    tools:context="layout.savePlace">
+
+    <EditText
+        android:id="@+id/placeName_edit"
+        android:maxLength="50"
+        android:layout_margin="10dp"
+        android:padding = "10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textCursorDrawable="@null"
+        android:background="#343741"
+        android:textColor="#C0C9E8"
+        android:hint="What is this place?"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/placeName_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/feelings_edit"
+        android:layout_below="@id/spinner"
+        android:maxLength="50"
+        android:layout_margin="10dp"
+        android:padding = "10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textCursorDrawable="@null"
+        android:background="#343741"
+        android:textColor="#C0C9E8"
+        android:hint="How do you feel about this place?"/>
+
+    <EditText
+        android:id="@+id/sounds_edit"
+        android:layout_below="@id/feelings_edit"
+        android:maxLength="50"
+        android:layout_margin="10dp"
+        android:padding = "10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textCursorDrawable="@null"
+        android:background="#343741"
+        android:textColor="#C0C9E8"
+        android:hint="How does this place sound?"/>
+
+    <Button
+        android:id="@+id/continueButton_dialog"
+        android:layout_below="@id/sounds_edit"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#343741"
+        android:textColor="#C0C9E8"
+        android:text="DONE"/>
+
+
+</RelativeLayout>
